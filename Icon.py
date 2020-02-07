@@ -1,17 +1,6 @@
 # Nicholas Willich py2sp20 1-31-20
 #icon project
 raw = '0101001010101010101000110101010110100100101001001101011001101011010100101011011111011101000010111010'
-
-
-
-print ('Enter name of file \n')
-file=input(str())
-open('file', 'w')
-print('Enter Active character for icon')
-
-
-variable = input(str())
-
 '''
 The conv function converts the binary into the
 characters that will be displaying for the icon
@@ -22,7 +11,7 @@ def conv(raw):
         if item == '0':
             con = con + ' '
         else:
-            con = con + variable
+            con = con + '@'
     return (con)
 
 
